@@ -1,7 +1,7 @@
 azure-eventhub>=5.12
 opentelemetry-sdk>=1.25
 opentelemetry-exporter-otlp-proto-grpc>=1.25
-azure-monitor-opentelemetry-exporter>=1.0
+azure-monitor-opentelemetry-exporter>=1.0.0b1
 pydantic>=2.7
 pyyaml>=6.0
 jsonpath-ng>=1.6
