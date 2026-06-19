@@ -1,4 +1,4 @@
-# Security Policy: eventhub-otel-mapper
+# Security Policy: eventhub-otlp-mapper
 
 ## Supported Versions
 

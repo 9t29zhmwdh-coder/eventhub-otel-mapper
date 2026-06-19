@@ -3,7 +3,7 @@ requires = ["setuptools>=68", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "eventhub-otel-mapper"
+name = "eventhub-otlp-mapper"
 version = "0.1.0"
 description = "Map Azure EventHub messages to OpenTelemetry Traces and Metrics"
 authors = [{ name = "Rafael Yilmaz", email = "rafael.yilmaz@icloud.com" }]
@@ -29,7 +29,7 @@ dev = [
 ]
 
 [project.scripts]
-eventhub-otel-mapper = "eventhub_otel_mapper.main:run"
+eventhub-otlp-mapper = "eventhub_otel_mapper.main:run"
 
 [tool.setuptools.packages.find]
 where = ["src"]

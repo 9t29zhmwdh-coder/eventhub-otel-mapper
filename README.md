@@ -1,7 +1,7 @@
 <div align="center">
   <img src="RayStudio.png" alt="RayStudio Logo" width="120"/>
 
-  <h1>eventhub-otel-mapper</h1>
+  <h1>eventhub-otlp-mapper</h1>
 </div>
 
 > 🇩🇪 [Deutsche Version](README.de.md)
@@ -15,7 +15,7 @@ Consume events from any Azure EventHub namespace and emit structured OpenTelemet
 ![Platform](https://img.shields.io/badge/Platform-Ubuntu%20%7C%20Windows-lightgrey?logo=linux)
 ![License](https://img.shields.io/badge/License-MIT-green)
 [![Azure Ready](https://img.shields.io/badge/Azure-Monitor%20%7C%20App%20Insights-blue?logo=microsoftazure)](docs/azure_integration.md)
-[![CI](https://github.com/9t29zhmwdh-coder/eventhub-otel-mapper/actions/workflows/ci.yml/badge.svg)](https://github.com/9t29zhmwdh-coder/eventhub-otel-mapper/actions/workflows/ci.yml)
+[![CI](https://github.com/9t29zhmwdh-coder/eventhub-otlp-mapper/actions/workflows/ci.yml/badge.svg)](https://github.com/9t29zhmwdh-coder/eventhub-otlp-mapper/actions/workflows/ci.yml)
 
 ---
 
@@ -44,14 +44,14 @@ Consume events from any Azure EventHub namespace and emit structured OpenTelemet
 ## Quick Start
 
 ```bash
-git clone https://github.com/9t29zhmwdh-coder/eventhub-otel-mapper.git
-cd eventhub-otel-mapper
+git clone https://github.com/9t29zhmwdh-coder/eventhub-otlp-mapper.git
+cd eventhub-otlp-mapper
 pip install -e .
 
 cp .env.example .env
 # Fill in EVENTHUB_CONNECTION_STRING, EVENTHUB_NAME, OTLP_ENDPOINT
 
-eventhub-otel-mapper
+eventhub-otlp-mapper
 ```
 
 Edit `config/mapping.yaml` to map your EventHub payload fields to OpenTelemetry attributes.

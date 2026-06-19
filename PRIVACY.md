@@ -1,4 +1,4 @@
-# Privacy Policy: eventhub-otel-mapper
+# Privacy Policy: eventhub-otlp-mapper
 
 ## What I Collect
 

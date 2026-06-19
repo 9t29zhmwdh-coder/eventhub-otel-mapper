@@ -1,7 +1,7 @@
 <div align="center">
   <img src="RayStudio.png" alt="RayStudio Logo" width="120"/>
 
-  <h1>eventhub-otel-mapper</h1>
+  <h1>eventhub-otlp-mapper</h1>
 </div>
 
 > 🇬🇧 [English Version](README.md)
@@ -15,7 +15,7 @@ Nachrichten aus einem Azure EventHub-Namespace konsumieren und als strukturierte
 ![Platform](https://img.shields.io/badge/Platform-Ubuntu%20%7C%20Windows-lightgrey?logo=linux)
 ![License](https://img.shields.io/badge/License-MIT-green)
 [![Azure Ready](https://img.shields.io/badge/Azure-Monitor%20%7C%20App%20Insights-blue?logo=microsoftazure)](docs/azure_integration.md)
-[![CI](https://github.com/9t29zhmwdh-coder/eventhub-otel-mapper/actions/workflows/ci.yml/badge.svg)](https://github.com/9t29zhmwdh-coder/eventhub-otel-mapper/actions/workflows/ci.yml)
+[![CI](https://github.com/9t29zhmwdh-coder/eventhub-otlp-mapper/actions/workflows/ci.yml/badge.svg)](https://github.com/9t29zhmwdh-coder/eventhub-otlp-mapper/actions/workflows/ci.yml)
 
 ---
 
@@ -44,14 +44,14 @@ Nachrichten aus einem Azure EventHub-Namespace konsumieren und als strukturierte
 ## Schnellstart
 
 ```bash
-git clone https://github.com/9t29zhmwdh-coder/eventhub-otel-mapper.git
-cd eventhub-otel-mapper
+git clone https://github.com/9t29zhmwdh-coder/eventhub-otlp-mapper.git
+cd eventhub-otlp-mapper
 pip install -e .
 
 cp .env.example .env
 # EVENTHUB_CONNECTION_STRING, EVENTHUB_NAME und OTLP_ENDPOINT eintragen
 
-eventhub-otel-mapper
+eventhub-otlp-mapper
 ```
 
 `config/mapping.yaml` anpassen, um Payload-Felder auf OTel-Attribute abzubilden.

@@ -14,7 +14,7 @@ from opentelemetry.trace import SpanKind, StatusCode
 
 
 def build_tracer_provider(otlp_endpoint: str, headers: dict[str, str]) -> TracerProvider:
-    resource = Resource.create({"service.name": "eventhub-otel-mapper"})
+    resource = Resource.create({"service.name": "eventhub-otlp-mapper"})
     exporter = OTLPSpanExporter(endpoint=otlp_endpoint, headers=headers)
     provider = TracerProvider(resource=resource)
     provider.add_span_processor(BatchSpanProcessor(exporter))

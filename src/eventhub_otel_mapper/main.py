@@ -42,11 +42,11 @@ def run() -> None:
 
     tracer_provider = build_tracer_provider(otlp_endpoint, otlp_headers)
     trace.set_tracer_provider(tracer_provider)
-    tracer = trace.get_tracer("eventhub-otel-mapper")
+    tracer = trace.get_tracer("eventhub-otlp-mapper")
 
     meter_provider = build_meter_provider(otlp_endpoint, otlp_headers)
     metrics.set_meter_provider(meter_provider)
-    meter = metrics.get_meter("eventhub-otel-mapper")
+    meter = metrics.get_meter("eventhub-otlp-mapper")
     emitter = MetricEmitter(meter, config.metrics)
 
     def on_mapped(mapped: dict[str, Any]) -> None:
