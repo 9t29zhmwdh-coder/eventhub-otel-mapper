@@ -31,7 +31,11 @@ def emit_span(
     service_name = mapped.get("resource.service.name", "unknown")
     severity = mapped.get("span.attributes.event.severity", "INFO")
     error_desc = mapped.get("span.status.description")
-    duration_ms = mapped.get("span.attributes.duration_ms")
+    raw_duration = mapped.get("span.attributes.duration_ms")
+    try:
+        duration_ms: float | None = float(raw_duration) if raw_duration is not None else None
+    except (ValueError, TypeError):
+        duration_ms = None
 
     if start_time_ns is None:
         start_time_ns = time.time_ns()
