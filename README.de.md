@@ -23,7 +23,7 @@ Nachrichten aus einem Azure EventHub-Namespace konsumieren und als strukturierte
 | OTLP-Export | Traces und Metriken via gRPC OTLP an beliebige kompatible Backends |
 | Azure Monitor | Nativer Application Insights Exporter, KQL-faehige Traces |
 | Schema-Validierung | Pydantic v2 Konfigurationsvalidierung mit klaren Fehlermeldungen |
-| Checkpointing | Azure Blob Storage Checkpoint-Unterstuetzung fuer Produktiv-Deployments |
+| Checkpointing | Azure Blob Storage Checkpoint-Unterstuetzung für Produktiv-Deployments |
 | CI getestet | Ubuntu und Windows Matrix mit ruff und pytest |
 
 ---
@@ -76,7 +76,7 @@ Siehe [`docs/azure_integration.md`](docs/azure_integration.md) fuer:
 - EventHub-Namespace verbinden
 - Application Insights / Azure Monitor einrichten
 - Grafana Cloud OTLP konfigurieren
-- KQL-Abfragen fuer Application Insights
+- KQL-Abfragen für Application Insights
 
 ---
 
